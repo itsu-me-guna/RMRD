@@ -5,8 +5,9 @@ from platform import system
 import env_variable as ev                              # Import Environmental variable file
 from env_variable import inferSchema
 from get_spark import get_spark_object                 # Import get_Spark_object from get_Spark to create spark object
-from validate import get_current_date                  # Import get_current_date from validate to validate spark object
+from validate import get_current_date, print_schema    # Import get_current_date from validate to validate spark object
 from ingest import load_files, display_df, df_count
+from data_transform import data_clean
 
 import logging
 import logging.config
@@ -54,6 +55,14 @@ def main():
         display_df(sample_file, 'Sample File')
         logging.info('Dataframe validation Count...')
         df_count(sample_file, 'Sample File')
+
+        logging.info('Data processing json flattening process')
+        df_sample_file = data_clean(sample_file, 'Sample File')
+        logging.info('Displaying the Processed dataframe > {}'.format(df_sample_file))
+        display_df(df_sample_file, 'Processed Sample File')
+
+        logging.info('Schema validation for data frame > {}'.format(df_sample_file))
+        print_schema(df_sample_file, 'df_sample_file')
 
     except Exception as exp:
         logging.error('An Error occured when calling main() please check the trace===',str(exp))

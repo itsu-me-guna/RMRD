@@ -11,3 +11,17 @@ def get_current_date(spark):
         raise
     else:
         loggers.warning('Validation Done, go forward....')
+
+def print_schema(df, df_name):
+    try:
+        loggers.warning("Printing dataframe schema {}".format(df_name))
+        sch = df.schema.fields
+        for i in sch:
+            loggers.info(f"\{i}")
+    except Exception as exp:
+        loggers.error("An error occured during print_schema===", str(exp))
+        raise
+    else:
+        loggers.info("Print schema done, go fwd...")
+
+

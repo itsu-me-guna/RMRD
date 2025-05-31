@@ -225,3 +225,72 @@
 2025-05-28 23:31:15,906 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
 2025-05-28 23:31:21,613 - root - INFO - Dataframe validation Count...
 2025-05-28 23:31:22,637 - root - INFO - Application Run
+2025-05-29 22:26:56,018 - root - INFO - i am in the main method..
+2025-05-29 22:26:56,018 - root - INFO - Calling Spark Object
+2025-05-29 22:26:56,018 - Get_spark - INFO - get_spark_object spark object started
+2025-05-29 22:26:56,019 - Get_spark - INFO - master is local
+2025-05-29 22:27:21,713 - Get_spark - INFO - Spark object create...
+2025-05-29 22:27:21,713 - root - INFO - Validating Spark object
+2025-05-29 22:27:21,713 - Validate - WARNING - Started the get_current_date method...
+2025-05-29 22:27:25,083 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 5, 29))]
+2025-05-29 22:27:25,083 - Validate - WARNING - Validation Done, go forward....
+2025-05-29 22:27:25,083 - root - INFO - Reading file which is of > json
+2025-05-29 22:27:26,611 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-05-29 22:27:29,813 - root - INFO - Dataframe validation Count...
+2025-05-29 22:27:30,781 - root - INFO - Application Run
+2025-05-29 23:17:01,172 - root - INFO - i am in the main method..
+2025-05-29 23:17:01,172 - root - INFO - Calling Spark Object
+2025-05-29 23:17:01,172 - Get_spark - INFO - get_spark_object spark object started
+2025-05-29 23:17:01,172 - Get_spark - INFO - master is local
+2025-05-29 23:17:08,425 - Get_spark - INFO - Spark object create...
+2025-05-29 23:17:08,425 - root - INFO - Validating Spark object
+2025-05-29 23:17:08,425 - Validate - WARNING - Started the get_current_date method...
+2025-05-29 23:17:11,310 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 5, 29))]
+2025-05-29 23:17:11,310 - Validate - WARNING - Validation Done, go forward....
+2025-05-29 23:17:11,311 - root - INFO - Reading file which is of > json
+2025-05-29 23:17:12,906 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-05-29 23:17:16,457 - root - INFO - Dataframe validation Count...
+2025-05-29 23:17:17,249 - root - INFO - Data processing json flattening process
+2025-05-29 23:17:17,420 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-05-29 23:17:19,605 - root - INFO - Application Run
+2025-05-31 13:45:42,785 - root - INFO - i am in the main method..
+2025-05-31 13:45:42,785 - root - INFO - Calling Spark Object
+2025-05-31 13:45:42,786 - Get_spark - INFO - get_spark_object spark object started
+2025-05-31 13:45:42,786 - Get_spark - INFO - master is local
+2025-05-31 13:46:01,328 - Get_spark - INFO - Spark object create...
+2025-05-31 13:46:01,328 - root - INFO - Validating Spark object
+2025-05-31 13:46:01,328 - Validate - WARNING - Started the get_current_date method...
+2025-05-31 13:46:04,459 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 5, 31))]
+2025-05-31 13:46:04,459 - Validate - WARNING - Validation Done, go forward....
+2025-05-31 13:46:04,460 - root - INFO - Reading file which is of > json
+2025-05-31 13:46:06,034 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-05-31 13:46:09,469 - root - INFO - Dataframe validation Count...
+2025-05-31 13:46:10,296 - root - INFO - Data processing json flattening process
+2025-05-31 13:46:10,297 - Data_transform - WARNING - Flattening the json file Sample File
+2025-05-31 13:46:10,444 - Data_transform - WARNING - Data_transform completed successfully...
+2025-05-31 13:46:10,447 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-05-31 13:46:12,614 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-05-31 13:46:12,615 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-05-31 13:46:12,615 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-05-31 13:46:12,616 - Validate - INFO - Print schema done, go fwd...
+2025-05-31 13:46:12,616 - root - INFO - Application Run
