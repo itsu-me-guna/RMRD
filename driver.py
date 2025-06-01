@@ -27,7 +27,7 @@ def main():
         logging.info('Validating Spark object')
         get_current_date(spark)                             # Validate the spark object
 
-        print(os.listdir(ev.src_sample_file))
+        # print(os.listdir(ev.src_sample_file))
         for file in os.listdir(ev.src_sample_file):
             file_dir=ev.src_sample_file + '\\' + file
             print('File is ', file_dir)
@@ -63,6 +63,9 @@ def main():
 
         logging.info('Schema validation for data frame > {}'.format(df_sample_file))
         print_schema(df_sample_file, 'df_sample_file')
+
+        # df_sample_file.show()
+
 
     except Exception as exp:
         logging.error('An Error occured when calling main() please check the trace===',str(exp))

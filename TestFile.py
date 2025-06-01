@@ -29,15 +29,26 @@ df = df.select("Sample.ApprovalStatus", "Sample.CCId", "Sample.CentreSampleNo", 
 "TestRslt.Val")
 
 
-# df.show()
-df.printSchema()
+df.show()
+# df.printSchema()
 # print(df.schema.fields)
 # print(df.schema.names)
 
-sch = df.schema.fields
-print(sch, type(sch))
-for i in sch:
-    print(i, f"\{i}")
+# sch = df.schema.fields
+# print(sch, type(sch))
+# for i in sch:
+#     print(i, f"\{i}")
+
+# print(df.columns)
+
+df_nan = df.filter(isnan(col("EditStauts")))
+df_nan.show()
+
+# df.select([count(when (isnan(col(c)) | col(c).isNull(), c).alias(c)) for c in df.columns]).show()
+df.select([count(when (col(c).isNull(), c)).alias(c) for c in df.columns]).show()
+
+# for c in df.columns:
+#     print(c)
 
 
 # df = spark.read.format('json').option(multiline=True).load('C:\Users\Admin\IdeaProjects\CCRMRD\Source\SampleFile\2_Thalaivasal CC_1614_2024_01_01.json')

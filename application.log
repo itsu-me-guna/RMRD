@@ -294,3 +294,487 @@
 2025-05-31 13:46:12,616 - Validate - INFO - \StructField('Val', StringType(), True)
 2025-05-31 13:46:12,616 - Validate - INFO - Print schema done, go fwd...
 2025-05-31 13:46:12,616 - root - INFO - Application Run
+2025-05-31 13:58:57,104 - root - INFO - i am in the main method..
+2025-05-31 13:58:57,104 - root - INFO - Calling Spark Object
+2025-05-31 13:58:57,105 - Get_spark - INFO - get_spark_object spark object started
+2025-05-31 13:58:57,105 - Get_spark - INFO - master is local
+2025-05-31 13:59:04,337 - Get_spark - INFO - Spark object create...
+2025-05-31 13:59:04,337 - root - INFO - Validating Spark object
+2025-05-31 13:59:04,337 - Validate - WARNING - Started the get_current_date method...
+2025-05-31 13:59:07,414 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 5, 31))]
+2025-05-31 13:59:07,414 - Validate - WARNING - Validation Done, go forward....
+2025-05-31 13:59:07,415 - root - INFO - Reading file which is of > json
+2025-05-31 13:59:08,871 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-05-31 13:59:12,006 - root - INFO - Dataframe validation Count...
+2025-05-31 13:59:12,862 - root - INFO - Data processing json flattening process
+2025-05-31 13:59:12,862 - Data_transform - WARNING - Flattening the json file Sample File
+2025-05-31 13:59:13,017 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-05-31 13:59:13,041 - Data_transform - WARNING - Data_transform completed successfully...
+2025-05-31 13:59:13,044 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-05-31 13:59:15,403 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-05-31 13:59:15,403 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-05-31 13:59:15,403 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-05-31 13:59:15,404 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-05-31 13:59:15,405 - Validate - INFO - Print schema done, go fwd...
+2025-05-31 13:59:15,405 - root - INFO - Application Run
+2025-05-31 13:59:52,243 - root - INFO - i am in the main method..
+2025-05-31 13:59:52,244 - root - INFO - Calling Spark Object
+2025-05-31 13:59:52,244 - Get_spark - INFO - get_spark_object spark object started
+2025-05-31 13:59:52,244 - Get_spark - INFO - master is local
+2025-05-31 13:59:59,312 - Get_spark - INFO - Spark object create...
+2025-05-31 13:59:59,312 - root - INFO - Validating Spark object
+2025-05-31 13:59:59,312 - Validate - WARNING - Started the get_current_date method...
+2025-05-31 14:00:02,315 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 5, 31))]
+2025-05-31 14:00:02,315 - Validate - WARNING - Validation Done, go forward....
+2025-05-31 14:00:02,316 - root - INFO - Reading file which is of > json
+2025-05-31 14:00:03,740 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-05-31 14:00:07,064 - root - INFO - Dataframe validation Count...
+2025-05-31 14:00:07,877 - root - INFO - Data processing json flattening process
+2025-05-31 14:00:07,877 - Data_transform - WARNING - Flattening the json file Sample File
+2025-05-31 14:00:08,065 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-05-31 14:00:08,098 - Data_transform - WARNING - Data_transform completed successfully...
+2025-05-31 14:00:08,102 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-05-31 14:00:10,335 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-05-31 14:00:10,335 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-05-31 14:00:10,335 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-05-31 14:00:10,335 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-05-31 14:00:10,335 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-05-31 14:00:10,336 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-05-31 14:00:10,337 - Validate - INFO - Print schema done, go fwd...
+2025-05-31 14:00:10,337 - root - INFO - Application Run
+2025-06-01 20:30:23,971 - root - INFO - i am in the main method..
+2025-06-01 20:30:23,972 - root - INFO - Calling Spark Object
+2025-06-01 20:30:23,972 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 20:30:23,972 - Get_spark - INFO - master is local
+2025-06-01 20:30:48,088 - Get_spark - INFO - Spark object create...
+2025-06-01 20:30:48,088 - root - INFO - Validating Spark object
+2025-06-01 20:30:48,088 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 20:30:51,693 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 20:30:51,693 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 20:30:51,693 - root - INFO - Reading file which is of > json
+2025-06-01 20:30:53,409 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 20:30:57,218 - root - INFO - Dataframe validation Count...
+2025-06-01 20:30:58,306 - root - INFO - Data processing json flattening process
+2025-06-01 20:30:58,306 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 20:30:58,474 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 20:30:58,506 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 20:30:58,511 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 20:31:02,507 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 20:31:02,507 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 20:31:02,508 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 20:31:02,509 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 20:31:02,509 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 20:31:02,509 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 20:31:02,509 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-06-01 20:31:02,509 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 20:31:02,509 - root - INFO - Application Run
+2025-06-01 21:00:33,316 - root - INFO - i am in the main method..
+2025-06-01 21:00:33,317 - root - INFO - Calling Spark Object
+2025-06-01 21:00:33,317 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:00:33,317 - Get_spark - INFO - master is local
+2025-06-01 21:00:41,079 - Get_spark - INFO - Spark object create...
+2025-06-01 21:00:41,079 - root - INFO - Validating Spark object
+2025-06-01 21:00:41,079 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:00:44,183 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:00:44,183 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:00:44,184 - root - INFO - Reading file which is of > json
+2025-06-01 21:00:45,717 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:00:49,055 - root - INFO - Dataframe validation Count...
+2025-06-01 21:00:49,964 - root - INFO - Data processing json flattening process
+2025-06-01 21:00:49,965 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:00:50,123 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:00:50,149 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:00:50,359 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:00:50,359 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:00:50,362 - root - INFO - Displaying the Processed dataframe > DataFrame[count(CASE WHEN (ApprovalStatus IS NULL) THEN ApprovalStatus END): bigint, count(CASE WHEN (CCId IS NULL) THEN CCId END): bigint, count(CASE WHEN (CentreSampleNo IS NULL) THEN CentreSampleNo END): bigint, count(CASE WHEN (ChannelNo IS NULL) THEN ChannelNo END): bigint, count(CASE WHEN (EditStauts IS NULL) THEN EditStauts END): bigint, count(CASE WHEN (MilkType IS NULL) THEN MilkType END): bigint, count(CASE WHEN (NewStatus IS NULL) THEN NewStatus END): bigint, count(CASE WHEN (ProcessName IS NULL) THEN ProcessName END): bigint, count(CASE WHEN (SampleChSrc IS NULL) THEN SampleChSrc END): bigint, count(CASE WHEN (SampleDate IS NULL) THEN SampleDate END): bigint, count(CASE WHEN (SampleNo IS NULL) THEN SampleNo END): bigint, count(CASE WHEN (ShiftDesc IS NULL) THEN ShiftDesc END): bigint, count(CASE WHEN (ShiftTiming IS NULL) THEN ShiftTiming END): bigint, count(CASE WHEN (TrayNo IS NULL) THEN TrayNo END): bigint, count(CASE WHEN (AnalyserName IS NULL) THEN AnalyserName END): bigint, count(CASE WHEN (AnalyserType IS NULL) THEN AnalyserType END): bigint, count(CASE WHEN (DispName IS NULL) THEN DispName END): bigint, count(CASE WHEN (TestParamName IS NULL) THEN TestParamName END): bigint, count(CASE WHEN (TstParamAnsMapId IS NULL) THEN TstParamAnsMapId END): bigint, count(CASE WHEN (TstParamId IS NULL) THEN TstParamId END): bigint, count(CASE WHEN (Val IS NULL) THEN Val END): bigint]
+2025-06-01 21:00:52,643 - root - INFO - Schema validation for data frame > DataFrame[count(CASE WHEN (ApprovalStatus IS NULL) THEN ApprovalStatus END): bigint, count(CASE WHEN (CCId IS NULL) THEN CCId END): bigint, count(CASE WHEN (CentreSampleNo IS NULL) THEN CentreSampleNo END): bigint, count(CASE WHEN (ChannelNo IS NULL) THEN ChannelNo END): bigint, count(CASE WHEN (EditStauts IS NULL) THEN EditStauts END): bigint, count(CASE WHEN (MilkType IS NULL) THEN MilkType END): bigint, count(CASE WHEN (NewStatus IS NULL) THEN NewStatus END): bigint, count(CASE WHEN (ProcessName IS NULL) THEN ProcessName END): bigint, count(CASE WHEN (SampleChSrc IS NULL) THEN SampleChSrc END): bigint, count(CASE WHEN (SampleDate IS NULL) THEN SampleDate END): bigint, count(CASE WHEN (SampleNo IS NULL) THEN SampleNo END): bigint, count(CASE WHEN (ShiftDesc IS NULL) THEN ShiftDesc END): bigint, count(CASE WHEN (ShiftTiming IS NULL) THEN ShiftTiming END): bigint, count(CASE WHEN (TrayNo IS NULL) THEN TrayNo END): bigint, count(CASE WHEN (AnalyserName IS NULL) THEN AnalyserName END): bigint, count(CASE WHEN (AnalyserType IS NULL) THEN AnalyserType END): bigint, count(CASE WHEN (DispName IS NULL) THEN DispName END): bigint, count(CASE WHEN (TestParamName IS NULL) THEN TestParamName END): bigint, count(CASE WHEN (TstParamAnsMapId IS NULL) THEN TstParamAnsMapId END): bigint, count(CASE WHEN (TstParamId IS NULL) THEN TstParamId END): bigint, count(CASE WHEN (Val IS NULL) THEN Val END): bigint]
+2025-06-01 21:00:52,643 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:00:52,643 - Validate - INFO - \StructField('count(CASE WHEN (ApprovalStatus IS NULL) THEN ApprovalStatus END)', LongType(), False)
+2025-06-01 21:00:52,643 - Validate - INFO - \StructField('count(CASE WHEN (CCId IS NULL) THEN CCId END)', LongType(), False)
+2025-06-01 21:00:52,643 - Validate - INFO - \StructField('count(CASE WHEN (CentreSampleNo IS NULL) THEN CentreSampleNo END)', LongType(), False)
+2025-06-01 21:00:52,643 - Validate - INFO - \StructField('count(CASE WHEN (ChannelNo IS NULL) THEN ChannelNo END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (EditStauts IS NULL) THEN EditStauts END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (MilkType IS NULL) THEN MilkType END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (NewStatus IS NULL) THEN NewStatus END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (ProcessName IS NULL) THEN ProcessName END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (SampleChSrc IS NULL) THEN SampleChSrc END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (SampleDate IS NULL) THEN SampleDate END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (SampleNo IS NULL) THEN SampleNo END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (ShiftDesc IS NULL) THEN ShiftDesc END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (ShiftTiming IS NULL) THEN ShiftTiming END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (TrayNo IS NULL) THEN TrayNo END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (AnalyserName IS NULL) THEN AnalyserName END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (AnalyserType IS NULL) THEN AnalyserType END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (DispName IS NULL) THEN DispName END)', LongType(), False)
+2025-06-01 21:00:52,645 - Validate - INFO - \StructField('count(CASE WHEN (TestParamName IS NULL) THEN TestParamName END)', LongType(), False)
+2025-06-01 21:00:52,647 - Validate - INFO - \StructField('count(CASE WHEN (TstParamAnsMapId IS NULL) THEN TstParamAnsMapId END)', LongType(), False)
+2025-06-01 21:00:52,647 - Validate - INFO - \StructField('count(CASE WHEN (TstParamId IS NULL) THEN TstParamId END)', LongType(), False)
+2025-06-01 21:00:52,647 - Validate - INFO - \StructField('count(CASE WHEN (Val IS NULL) THEN Val END)', LongType(), False)
+2025-06-01 21:00:52,647 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:00:52,647 - root - INFO - Application Run
+2025-06-01 21:01:26,557 - root - INFO - i am in the main method..
+2025-06-01 21:01:26,557 - root - INFO - Calling Spark Object
+2025-06-01 21:01:26,557 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:01:26,557 - Get_spark - INFO - master is local
+2025-06-01 21:01:33,712 - Get_spark - INFO - Spark object create...
+2025-06-01 21:01:33,712 - root - INFO - Validating Spark object
+2025-06-01 21:01:33,712 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:01:36,652 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:01:36,653 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:01:36,653 - root - INFO - Reading file which is of > json
+2025-06-01 21:01:38,209 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:01:41,286 - root - INFO - Dataframe validation Count...
+2025-06-01 21:01:42,160 - root - INFO - Data processing json flattening process
+2025-06-01 21:01:42,160 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:01:42,304 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:01:42,334 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:01:42,639 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:01:42,639 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:01:42,642 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: bigint, CCId: bigint, CentreSampleNo: bigint, ChannelNo: bigint, EditStauts: bigint, MilkType: bigint, NewStatus: bigint, ProcessName: bigint, SampleChSrc: bigint, SampleDate: bigint, SampleNo: bigint, ShiftDesc: bigint, ShiftTiming: bigint, TrayNo: bigint, AnalyserName: bigint, AnalyserType: bigint, DispName: bigint, TestParamName: bigint, TstParamAnsMapId: bigint, TstParamId: bigint, Val: bigint]
+2025-06-01 21:01:44,726 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: bigint, CCId: bigint, CentreSampleNo: bigint, ChannelNo: bigint, EditStauts: bigint, MilkType: bigint, NewStatus: bigint, ProcessName: bigint, SampleChSrc: bigint, SampleDate: bigint, SampleNo: bigint, ShiftDesc: bigint, ShiftTiming: bigint, TrayNo: bigint, AnalyserName: bigint, AnalyserType: bigint, DispName: bigint, TestParamName: bigint, TstParamAnsMapId: bigint, TstParamId: bigint, Val: bigint]
+2025-06-01 21:01:44,727 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('ApprovalStatus', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('CCId', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('CentreSampleNo', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('ChannelNo', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('EditStauts', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('MilkType', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('NewStatus', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('ProcessName', LongType(), False)
+2025-06-01 21:01:44,727 - Validate - INFO - \StructField('SampleChSrc', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('SampleDate', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('SampleNo', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('ShiftDesc', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('ShiftTiming', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('TrayNo', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('AnalyserName', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('AnalyserType', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('DispName', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('TestParamName', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('TstParamId', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - \StructField('Val', LongType(), False)
+2025-06-01 21:01:44,728 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:01:44,728 - root - INFO - Application Run
+2025-06-01 21:04:08,818 - root - INFO - i am in the main method..
+2025-06-01 21:04:08,818 - root - INFO - Calling Spark Object
+2025-06-01 21:04:08,818 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:04:08,818 - Get_spark - INFO - master is local
+2025-06-01 21:04:15,963 - Get_spark - INFO - Spark object create...
+2025-06-01 21:04:15,963 - root - INFO - Validating Spark object
+2025-06-01 21:04:15,963 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:04:19,050 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:04:19,050 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:04:19,051 - root - INFO - Reading file which is of > json
+2025-06-01 21:04:20,551 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:04:23,944 - root - INFO - Dataframe validation Count...
+2025-06-01 21:04:24,884 - root - INFO - Data processing json flattening process
+2025-06-01 21:04:24,884 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:04:25,059 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:04:25,101 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:04:25,428 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:04:25,458 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 21:04:25,459 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:04:25,461 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: bigint, CCId: bigint, CentreSampleNo: bigint, ChannelNo: bigint, EditStauts: bigint, MilkType: bigint, NewStatus: bigint, ProcessName: bigint, SampleChSrc: bigint, SampleDate: bigint, SampleNo: bigint, ShiftDesc: bigint, ShiftTiming: bigint, TrayNo: bigint, AnalyserName: bigint, AnalyserType: bigint, DispName: bigint, TestParamName: bigint, TstParamAnsMapId: bigint, TstParamId: bigint, Val: bigint]
+2025-06-01 21:04:27,533 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: bigint, CCId: bigint, CentreSampleNo: bigint, ChannelNo: bigint, EditStauts: bigint, MilkType: bigint, NewStatus: bigint, ProcessName: bigint, SampleChSrc: bigint, SampleDate: bigint, SampleNo: bigint, ShiftDesc: bigint, ShiftTiming: bigint, TrayNo: bigint, AnalyserName: bigint, AnalyserType: bigint, DispName: bigint, TestParamName: bigint, TstParamAnsMapId: bigint, TstParamId: bigint, Val: bigint]
+2025-06-01 21:04:27,533 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:04:27,533 - Validate - INFO - \StructField('ApprovalStatus', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('CCId', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('CentreSampleNo', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('ChannelNo', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('EditStauts', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('MilkType', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('NewStatus', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('ProcessName', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('SampleChSrc', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('SampleDate', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('SampleNo', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('ShiftDesc', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('ShiftTiming', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('TrayNo', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('AnalyserName', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('AnalyserType', LongType(), False)
+2025-06-01 21:04:27,534 - Validate - INFO - \StructField('DispName', LongType(), False)
+2025-06-01 21:04:27,535 - Validate - INFO - \StructField('TestParamName', LongType(), False)
+2025-06-01 21:04:27,535 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), False)
+2025-06-01 21:04:27,535 - Validate - INFO - \StructField('TstParamId', LongType(), False)
+2025-06-01 21:04:27,535 - Validate - INFO - \StructField('Val', LongType(), False)
+2025-06-01 21:04:27,535 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:04:27,535 - root - INFO - Application Run
+2025-06-01 21:05:37,685 - root - INFO - i am in the main method..
+2025-06-01 21:05:37,685 - root - INFO - Calling Spark Object
+2025-06-01 21:05:37,685 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:05:37,685 - Get_spark - INFO - master is local
+2025-06-01 21:05:45,326 - Get_spark - INFO - Spark object create...
+2025-06-01 21:05:45,326 - root - INFO - Validating Spark object
+2025-06-01 21:05:45,326 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:05:48,168 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:05:48,168 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:05:48,169 - root - INFO - Reading file which is of > json
+2025-06-01 21:05:49,769 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:05:53,056 - root - INFO - Dataframe validation Count...
+2025-06-01 21:05:53,973 - root - INFO - Data processing json flattening process
+2025-06-01 21:05:53,974 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:05:54,133 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:05:54,159 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:05:54,395 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:05:54,418 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 21:05:54,418 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:05:54,420 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: bigint, CCId: bigint, CentreSampleNo: bigint, ChannelNo: bigint, EditStauts: bigint, MilkType: bigint, NewStatus: bigint, ProcessName: bigint, SampleChSrc: bigint, SampleDate: bigint, SampleNo: bigint, ShiftDesc: bigint, ShiftTiming: bigint, TrayNo: bigint, AnalyserName: bigint, AnalyserType: bigint, DispName: bigint, TestParamName: bigint, TstParamAnsMapId: bigint, TstParamId: bigint, Val: bigint]
+2025-06-01 21:05:56,633 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: bigint, CCId: bigint, CentreSampleNo: bigint, ChannelNo: bigint, EditStauts: bigint, MilkType: bigint, NewStatus: bigint, ProcessName: bigint, SampleChSrc: bigint, SampleDate: bigint, SampleNo: bigint, ShiftDesc: bigint, ShiftTiming: bigint, TrayNo: bigint, AnalyserName: bigint, AnalyserType: bigint, DispName: bigint, TestParamName: bigint, TstParamAnsMapId: bigint, TstParamId: bigint, Val: bigint]
+2025-06-01 21:05:56,633 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('ApprovalStatus', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('CCId', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('CentreSampleNo', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('ChannelNo', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('EditStauts', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('MilkType', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('NewStatus', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('ProcessName', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('SampleChSrc', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('SampleDate', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('SampleNo', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('ShiftDesc', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('ShiftTiming', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('TrayNo', LongType(), False)
+2025-06-01 21:05:56,633 - Validate - INFO - \StructField('AnalyserName', LongType(), False)
+2025-06-01 21:05:56,634 - Validate - INFO - \StructField('AnalyserType', LongType(), False)
+2025-06-01 21:05:56,634 - Validate - INFO - \StructField('DispName', LongType(), False)
+2025-06-01 21:05:56,634 - Validate - INFO - \StructField('TestParamName', LongType(), False)
+2025-06-01 21:05:56,634 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), False)
+2025-06-01 21:05:56,634 - Validate - INFO - \StructField('TstParamId', LongType(), False)
+2025-06-01 21:05:56,634 - Validate - INFO - \StructField('Val', LongType(), False)
+2025-06-01 21:05:56,634 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:05:58,590 - root - INFO - Application Run
+2025-06-01 21:07:19,680 - root - INFO - i am in the main method..
+2025-06-01 21:07:19,680 - root - INFO - Calling Spark Object
+2025-06-01 21:07:19,680 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:07:19,680 - Get_spark - INFO - master is local
+2025-06-01 21:07:27,947 - Get_spark - INFO - Spark object create...
+2025-06-01 21:07:27,947 - root - INFO - Validating Spark object
+2025-06-01 21:07:27,947 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:07:30,845 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:07:30,845 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:07:30,846 - root - INFO - Reading file which is of > json
+2025-06-01 21:07:32,361 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:07:35,647 - root - INFO - Dataframe validation Count...
+2025-06-01 21:07:36,417 - root - INFO - Data processing json flattening process
+2025-06-01 21:07:36,418 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:07:36,574 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:07:36,603 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:07:36,899 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:07:36,923 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 21:07:36,923 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:07:36,926 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:07:38,500 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:07:38,500 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 21:07:38,500 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-06-01 21:07:38,501 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:07:39,491 - root - INFO - Application Run
+2025-06-01 21:09:50,797 - root - INFO - i am in the main method..
+2025-06-01 21:09:50,797 - root - INFO - Calling Spark Object
+2025-06-01 21:09:50,798 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:09:50,798 - Get_spark - INFO - master is local
+2025-06-01 21:09:58,114 - Get_spark - INFO - Spark object create...
+2025-06-01 21:09:58,114 - root - INFO - Validating Spark object
+2025-06-01 21:09:58,114 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:10:01,094 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:10:01,094 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:10:01,095 - root - INFO - Reading file which is of > json
+2025-06-01 21:10:02,623 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:10:05,888 - root - INFO - Dataframe validation Count...
+2025-06-01 21:10:06,724 - root - INFO - Data processing json flattening process
+2025-06-01 21:10:06,724 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:10:06,894 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:10:06,928 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:10:07,233 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:10:07,258 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 21:10:07,258 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:10:07,260 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:10:08,848 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:10:08,848 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 21:10:08,848 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-06-01 21:10:08,849 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:10:08,877 - root - INFO - Application Run
+2025-06-01 21:10:32,820 - root - INFO - i am in the main method..
+2025-06-01 21:10:32,820 - root - INFO - Calling Spark Object
+2025-06-01 21:10:32,822 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:10:32,822 - Get_spark - INFO - master is local
+2025-06-01 21:10:40,498 - Get_spark - INFO - Spark object create...
+2025-06-01 21:10:40,498 - root - INFO - Validating Spark object
+2025-06-01 21:10:40,498 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:10:43,568 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:10:43,569 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:10:43,569 - root - INFO - Reading file which is of > json
+2025-06-01 21:10:45,294 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:10:49,504 - root - INFO - Dataframe validation Count...
+2025-06-01 21:10:50,488 - root - INFO - Data processing json flattening process
+2025-06-01 21:10:50,488 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:10:50,669 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:10:50,713 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:10:51,292 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:10:51,328 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 21:10:55,803 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:10:55,805 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:10:57,547 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:10:57,547 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:10:57,547 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 21:10:57,547 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 21:10:57,547 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 21:10:57,547 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 21:10:57,548 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 21:10:57,548 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 21:10:57,548 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 21:10:57,548 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 21:10:57,549 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 21:10:57,549 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 21:10:57,549 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 21:10:57,549 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 21:10:57,549 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-06-01 21:10:57,550 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:10:57,552 - root - INFO - Application Run
+2025-06-01 21:11:39,231 - root - INFO - i am in the main method..
+2025-06-01 21:11:39,231 - root - INFO - Calling Spark Object
+2025-06-01 21:11:39,231 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:11:39,231 - Get_spark - INFO - master is local
+2025-06-01 21:11:46,960 - Get_spark - INFO - Spark object create...
+2025-06-01 21:11:46,960 - root - INFO - Validating Spark object
+2025-06-01 21:11:46,960 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:11:50,036 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:11:50,036 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:11:50,037 - root - INFO - Reading file which is of > json
+2025-06-01 21:11:51,570 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:11:54,651 - root - INFO - Dataframe validation Count...
+2025-06-01 21:11:55,535 - root - INFO - Data processing json flattening process
+2025-06-01 21:11:55,535 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:11:55,676 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:11:55,699 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:11:58,097 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:11:58,116 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 21:11:59,682 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:11:59,683 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:12:00,930 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:12:00,930 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:12:00,930 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 21:12:00,931 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 21:12:00,931 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 21:12:00,931 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 21:12:00,931 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 21:12:00,931 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 21:12:00,931 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 21:12:00,931 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-06-01 21:12:00,932 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:12:00,933 - root - INFO - Application Run
