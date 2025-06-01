@@ -778,3 +778,1342 @@
 2025-06-01 21:12:00,932 - Validate - INFO - \StructField('Val', StringType(), True)
 2025-06-01 21:12:00,932 - Validate - INFO - Print schema done, go fwd...
 2025-06-01 21:12:00,933 - root - INFO - Application Run
+2025-06-01 21:52:21,359 - root - INFO - i am in the main method..
+2025-06-01 21:52:21,359 - root - INFO - Calling Spark Object
+2025-06-01 21:52:21,359 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 21:52:21,359 - Get_spark - INFO - master is local
+2025-06-01 21:52:29,071 - Get_spark - INFO - Spark object create...
+2025-06-01 21:52:29,071 - root - INFO - Validating Spark object
+2025-06-01 21:52:29,071 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 21:52:32,753 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 21:52:32,754 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 21:52:32,754 - root - INFO - Reading file which is of > json
+2025-06-01 21:52:34,644 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 21:52:39,833 - root - INFO - Dataframe validation Count...
+2025-06-01 21:52:40,719 - root - INFO - Data processing json flattening process
+2025-06-01 21:52:40,719 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 21:52:40,855 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 21:52:40,880 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 21:52:41,131 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 21:52:41,153 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 21:52:41,153 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 21:52:41,156 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:52:42,680 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: string]
+2025-06-01 21:52:42,680 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 21:52:42,680 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 21:52:42,681 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 21:52:42,681 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 21:52:42,681 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 21:52:42,681 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 21:52:42,681 - Validate - INFO - \StructField('Val', StringType(), True)
+2025-06-01 21:52:42,681 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 21:52:42,681 - root - INFO - Application Run
+2025-06-01 23:37:09,711 - root - INFO - i am in the main method..
+2025-06-01 23:37:09,711 - root - INFO - Calling Spark Object
+2025-06-01 23:37:09,711 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:37:09,711 - Get_spark - INFO - master is local
+2025-06-01 23:37:17,279 - Get_spark - INFO - Spark object create...
+2025-06-01 23:37:17,279 - root - INFO - Validating Spark object
+2025-06-01 23:37:17,279 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:37:20,343 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:37:20,343 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:37:20,344 - root - INFO - Reading file which is of > json
+2025-06-01 23:37:22,144 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:37:26,807 - root - INFO - Dataframe validation Count...
+2025-06-01 23:37:27,737 - root - INFO - Data processing json flattening process
+2025-06-01 23:37:27,737 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:37:27,917 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:37:28,239 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:37:28,268 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:37:28,713 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:37:28,744 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:37:28,744 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:37:28,802 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:37:28,805 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:37:31,000 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:37:31,000 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:37:31,000 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:37:31,000 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:37:31,000 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:37:31,000 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:37:31,000 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:37:31,000 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:37:31,001 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:37:31,001 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:37:31,001 - root - INFO - Application Run
+2025-06-01 23:40:32,554 - root - INFO - i am in the main method..
+2025-06-01 23:40:32,554 - root - INFO - Calling Spark Object
+2025-06-01 23:40:32,554 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:40:32,554 - Get_spark - INFO - master is local
+2025-06-01 23:40:39,635 - Get_spark - INFO - Spark object create...
+2025-06-01 23:40:39,635 - root - INFO - Validating Spark object
+2025-06-01 23:40:39,635 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:40:42,769 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:40:42,769 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:40:42,770 - root - INFO - Reading file which is of > json
+2025-06-01 23:40:44,306 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:40:47,363 - root - INFO - Dataframe validation Count...
+2025-06-01 23:40:48,251 - root - INFO - Data processing json flattening process
+2025-06-01 23:40:48,251 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:40:48,400 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:40:48,554 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:40:48,585 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:40:48,921 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:40:48,947 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:40:48,947 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:40:48,987 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:40:48,991 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:40:50,733 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:40:50,733 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:40:50,733 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:40:50,733 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:40:50,733 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:40:50,733 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:40:50,733 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:40:50,733 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:40:50,733 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:40:50,734 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:40:50,735 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:40:50,735 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:40:50,735 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:40:50,735 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:40:50,735 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:40:50,735 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:40:50,790 - root - INFO - Application Run
+2025-06-01 23:41:46,103 - root - INFO - i am in the main method..
+2025-06-01 23:41:46,103 - root - INFO - Calling Spark Object
+2025-06-01 23:41:46,103 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:41:46,103 - Get_spark - INFO - master is local
+2025-06-01 23:41:53,382 - Get_spark - INFO - Spark object create...
+2025-06-01 23:41:53,382 - root - INFO - Validating Spark object
+2025-06-01 23:41:53,382 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:41:56,203 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:41:56,203 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:41:56,204 - root - INFO - Reading file which is of > json
+2025-06-01 23:41:57,640 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:42:01,205 - root - INFO - Dataframe validation Count...
+2025-06-01 23:42:02,071 - root - INFO - Data processing json flattening process
+2025-06-01 23:42:02,071 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:42:02,218 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:42:02,342 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:42:02,366 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:42:02,594 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:42:02,612 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:42:02,612 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:42:02,646 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:42:02,651 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:42:04,348 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:42:04,348 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:42:04,348 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:42:04,349 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:42:04,349 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:42:04,349 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:42:04,349 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:42:04,353 - Business_transform - WARNING - Splitting the date time into diff
+2025-06-01 23:42:04,353 - Business_transform - WARNING - Business transform intrn_data completed successfully
+2025-06-01 23:42:06,360 - root - INFO - Application Run
+2025-06-01 23:42:47,040 - root - INFO - i am in the main method..
+2025-06-01 23:42:47,040 - root - INFO - Calling Spark Object
+2025-06-01 23:42:47,040 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:42:47,040 - Get_spark - INFO - master is local
+2025-06-01 23:42:54,257 - Get_spark - INFO - Spark object create...
+2025-06-01 23:42:54,258 - root - INFO - Validating Spark object
+2025-06-01 23:42:54,258 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:42:57,149 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:42:57,149 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:42:57,149 - root - INFO - Reading file which is of > json
+2025-06-01 23:42:58,605 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:43:01,666 - root - INFO - Dataframe validation Count...
+2025-06-01 23:43:02,563 - root - INFO - Data processing json flattening process
+2025-06-01 23:43:02,563 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:43:02,713 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:43:02,845 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:43:02,868 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:43:03,090 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:43:03,107 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:43:03,107 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:43:03,142 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:43:03,145 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:43:04,956 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:43:04,956 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:43:04,956 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:43:04,956 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:43:04,956 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:43:04,956 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:43:04,956 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:43:04,956 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:43:04,956 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:43:04,957 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:43:04,957 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:43:04,957 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:43:04,957 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:43:07,112 - Business_transform - WARNING - Splitting the date time into diff
+2025-06-01 23:43:07,227 - DataFrameQueryContextLogger - ERROR - [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703
+Traceback (most recent call last):
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\py4j\protocol.py", line 327, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o320.withColumn.
+: org.apache.spark.sql.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703;
+'Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, ANALYSER_NO#216, CLR#217, Conduct#218, Density#219, FREEZING_POINT#220, Fat#221, LACTOSE#222, MACHINE_COUNT#223, PH#224, PROTEI#225, SALT#226, SNF#227, Temp#228, WATER#229, columnSplit('SampleDate)#258 AS SampleDate#259]
++- Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, __pivot_max(Val) AS `max(Val)`#215[0] AS ANALYSER_NO#216, __pivot_max(Val) AS `max(Val)`#215[1] AS CLR#217, __pivot_max(Val) AS `max(Val)`#215[2] AS Conduct#218, __pivot_max(Val) AS `max(Val)`#215[3] AS Density#219, __pivot_max(Val) AS `max(Val)`#215[4] AS FREEZING_POINT#220, __pivot_max(Val) AS `max(Val)`#215[5] AS Fat#221, __pivot_max(Val) AS `max(Val)`#215[6] AS LACTOSE#222, __pivot_max(Val) AS `max(Val)`#215[7] AS MACHINE_COUNT#223, __pivot_max(Val) AS `max(Val)`#215[8] AS PH#224, __pivot_max(Val) AS `max(Val)`#215[9] AS PROTEI#225, __pivot_max(Val) AS `max(Val)`#215[10] AS SALT#226, __pivot_max(Val) AS `max(Val)`#215[11] AS SNF#227, __pivot_max(Val) AS `max(Val)`#215[12] AS Temp#228, __pivot_max(Val) AS `max(Val)`#215[13] AS WATER#229]
+   +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, pivotfirst(TestParamName#47, max(Val)#185, ANALYSER_NO, CLR, Conduct, Density, FREEZING_POINT, Fat, LACTOSE, MACHINE_COUNT, PH, PROTEI, SALT, SNF, Temp, WATER, 0, 0) AS __pivot_max(Val) AS `max(Val)`#215]
+      +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47, max(Val#90) AS max(Val)#185]
+         +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, cast(Val#41 as decimal(18,2)) AS Val#90]
+            +- Filter atleastnnonnulls(1, TstParamAnsMapId#39L)
+               +- Filter atleastnnonnulls(1, EditStauts#25)
+                  +- Filter RLIKE(Val#41, ^[+-]?\d*\.?\d+$)
+                     +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#46, ^TEMP, Temp, 1) AS TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                        +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#45, ^PROTEIN, Protein, 1) AS TestParamName#46, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                           +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#44, ^FAT, Fat, 1) AS TestParamName#45, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                              +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#43, ^DENSITY, Density, 1) AS TestParamName#44, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                 +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#38, ^CONDUCT, Conduct, 1) AS TestParamName#43, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                    +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, regexp_replace(MilkType#26, ^C, Cow Milk, 1) AS MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#38, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                       +- Project [Sample#14.ApprovalStatus AS ApprovalStatus#21, Sample#14.CCId AS CCId#22L, Sample#14.CentreSampleNo AS CentreSampleNo#23, Sample#14.ChannelNo AS ChannelNo#24, Sample#14.EditStauts AS EditStauts#25, Sample#14.MilkType AS MilkType#26, Sample#14.NewStatus AS NewStatus#27, Sample#14.ProcessName AS ProcessName#28, Sample#14.SampleChSrc AS SampleChSrc#29L, Sample#14.SampleDate AS SampleDate#30, Sample#14.SampleNo AS SampleNo#31L, Sample#14.ShiftDesc AS ShiftDesc#32, Sample#14.ShiftTiming AS ShiftTiming#33, Sample#14.TrayNo AS TrayNo#34L, Analyser#17.AnalyserName AS AnalyserName#35, Analyser#17.AnalyserType AS AnalyserType#36, TestRslt#20.DispName AS DispName#37, TestRslt#20.TestParamName AS TestParamName#38, TestRslt#20.TstParamAnsMapId AS TstParamAnsMapId#39L, TestRslt#20.TstParamId AS TstParamId#40L, TestRslt#20.Val AS Val#41]
+                                          +- Project [Sample#14, Analyser#17, TestRslt#20]
+                                             +- Generate explode(Analyser#17.TestRslt), false, [TestRslt#20]
+                                                +- Project [Sample#14, Analyser#17]
+                                                   +- Generate explode(Sample#14.Analyser), false, [Analyser#17]
+                                                      +- Project [Sample#14]
+                                                         +- Generate explode(Sample#1), false, [Sample#14]
+                                                            +- Relation [Sample#1] json
+
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1439)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:121)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:80)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:115)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:113)
+	at org.apache.spark.sql.classic.Dataset.withPlan(Dataset.scala:2263)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:1283)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:232)
+	at org.apache.spark.sql.Dataset.withColumn(Dataset.scala:2187)
+	at org.apache.spark.sql.classic.Dataset.withColumn(Dataset.scala:1819)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+		at scala.collection.immutable.List.foreach(List.scala:334)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 23 more
+
+2025-06-01 23:43:07,259 - root - INFO - Application Run
+2025-06-01 23:44:19,891 - root - INFO - i am in the main method..
+2025-06-01 23:44:19,891 - root - INFO - Calling Spark Object
+2025-06-01 23:44:19,892 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:44:19,892 - Get_spark - INFO - master is local
+2025-06-01 23:44:27,286 - Get_spark - INFO - Spark object create...
+2025-06-01 23:44:27,287 - root - INFO - Validating Spark object
+2025-06-01 23:44:27,287 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:44:31,365 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:44:31,365 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:44:31,365 - root - INFO - Reading file which is of > json
+2025-06-01 23:44:33,472 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:44:37,050 - root - INFO - Dataframe validation Count...
+2025-06-01 23:44:38,032 - root - INFO - Data processing json flattening process
+2025-06-01 23:44:38,032 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:44:38,172 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:44:38,306 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:44:38,330 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:44:38,639 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:44:38,657 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:44:38,657 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:44:38,684 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:44:38,686 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:44:41,396 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:44:41,397 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:44:41,402 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:44:41,404 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:44:41,404 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:44:41,404 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:44:41,404 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:44:41,404 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:44:41,405 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:44:41,406 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:44:41,406 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:44:41,406 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:44:44,320 - Business_transform - WARNING - Splitting the date time into diff
+2025-06-01 23:44:44,449 - DataFrameQueryContextLogger - ERROR - [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703
+Traceback (most recent call last):
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\py4j\protocol.py", line 327, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o320.withColumn.
+: org.apache.spark.sql.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703;
+'Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, ANALYSER_NO#216, CLR#217, Conduct#218, Density#219, FREEZING_POINT#220, Fat#221, LACTOSE#222, MACHINE_COUNT#223, PH#224, PROTEI#225, SALT#226, SNF#227, Temp#228, WATER#229, columnSplit('SampleDate)#258 AS SampleDate#259]
++- Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, __pivot_max(Val) AS `max(Val)`#215[0] AS ANALYSER_NO#216, __pivot_max(Val) AS `max(Val)`#215[1] AS CLR#217, __pivot_max(Val) AS `max(Val)`#215[2] AS Conduct#218, __pivot_max(Val) AS `max(Val)`#215[3] AS Density#219, __pivot_max(Val) AS `max(Val)`#215[4] AS FREEZING_POINT#220, __pivot_max(Val) AS `max(Val)`#215[5] AS Fat#221, __pivot_max(Val) AS `max(Val)`#215[6] AS LACTOSE#222, __pivot_max(Val) AS `max(Val)`#215[7] AS MACHINE_COUNT#223, __pivot_max(Val) AS `max(Val)`#215[8] AS PH#224, __pivot_max(Val) AS `max(Val)`#215[9] AS PROTEI#225, __pivot_max(Val) AS `max(Val)`#215[10] AS SALT#226, __pivot_max(Val) AS `max(Val)`#215[11] AS SNF#227, __pivot_max(Val) AS `max(Val)`#215[12] AS Temp#228, __pivot_max(Val) AS `max(Val)`#215[13] AS WATER#229]
+   +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, pivotfirst(TestParamName#47, max(Val)#185, ANALYSER_NO, CLR, Conduct, Density, FREEZING_POINT, Fat, LACTOSE, MACHINE_COUNT, PH, PROTEI, SALT, SNF, Temp, WATER, 0, 0) AS __pivot_max(Val) AS `max(Val)`#215]
+      +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47, max(Val#90) AS max(Val)#185]
+         +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, cast(Val#41 as decimal(18,2)) AS Val#90]
+            +- Filter atleastnnonnulls(1, TstParamAnsMapId#39L)
+               +- Filter atleastnnonnulls(1, EditStauts#25)
+                  +- Filter RLIKE(Val#41, ^[+-]?\d*\.?\d+$)
+                     +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#46, ^TEMP, Temp, 1) AS TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                        +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#45, ^PROTEIN, Protein, 1) AS TestParamName#46, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                           +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#44, ^FAT, Fat, 1) AS TestParamName#45, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                              +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#43, ^DENSITY, Density, 1) AS TestParamName#44, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                 +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#38, ^CONDUCT, Conduct, 1) AS TestParamName#43, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                    +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, regexp_replace(MilkType#26, ^C, Cow Milk, 1) AS MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#38, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                       +- Project [Sample#14.ApprovalStatus AS ApprovalStatus#21, Sample#14.CCId AS CCId#22L, Sample#14.CentreSampleNo AS CentreSampleNo#23, Sample#14.ChannelNo AS ChannelNo#24, Sample#14.EditStauts AS EditStauts#25, Sample#14.MilkType AS MilkType#26, Sample#14.NewStatus AS NewStatus#27, Sample#14.ProcessName AS ProcessName#28, Sample#14.SampleChSrc AS SampleChSrc#29L, Sample#14.SampleDate AS SampleDate#30, Sample#14.SampleNo AS SampleNo#31L, Sample#14.ShiftDesc AS ShiftDesc#32, Sample#14.ShiftTiming AS ShiftTiming#33, Sample#14.TrayNo AS TrayNo#34L, Analyser#17.AnalyserName AS AnalyserName#35, Analyser#17.AnalyserType AS AnalyserType#36, TestRslt#20.DispName AS DispName#37, TestRslt#20.TestParamName AS TestParamName#38, TestRslt#20.TstParamAnsMapId AS TstParamAnsMapId#39L, TestRslt#20.TstParamId AS TstParamId#40L, TestRslt#20.Val AS Val#41]
+                                          +- Project [Sample#14, Analyser#17, TestRslt#20]
+                                             +- Generate explode(Analyser#17.TestRslt), false, [TestRslt#20]
+                                                +- Project [Sample#14, Analyser#17]
+                                                   +- Generate explode(Sample#14.Analyser), false, [Analyser#17]
+                                                      +- Project [Sample#14]
+                                                         +- Generate explode(Sample#1), false, [Sample#14]
+                                                            +- Relation [Sample#1] json
+
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1439)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:121)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:80)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:115)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:113)
+	at org.apache.spark.sql.classic.Dataset.withPlan(Dataset.scala:2263)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:1283)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:232)
+	at org.apache.spark.sql.Dataset.withColumn(Dataset.scala:2187)
+	at org.apache.spark.sql.classic.Dataset.withColumn(Dataset.scala:1819)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+		at scala.collection.immutable.List.foreach(List.scala:334)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 23 more
+
+2025-06-01 23:44:44,505 - root - INFO - Application Run
+2025-06-01 23:45:16,242 - root - INFO - i am in the main method..
+2025-06-01 23:45:16,242 - root - INFO - Calling Spark Object
+2025-06-01 23:45:16,242 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:45:16,242 - Get_spark - INFO - master is local
+2025-06-01 23:45:23,601 - Get_spark - INFO - Spark object create...
+2025-06-01 23:45:23,601 - root - INFO - Validating Spark object
+2025-06-01 23:45:23,601 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:45:26,549 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:45:26,549 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:45:26,550 - root - INFO - Reading file which is of > json
+2025-06-01 23:45:28,091 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:45:31,297 - root - INFO - Dataframe validation Count...
+2025-06-01 23:45:32,278 - root - INFO - Data processing json flattening process
+2025-06-01 23:45:32,279 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:45:32,415 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:45:32,556 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:45:32,578 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:45:32,804 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:45:32,822 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:45:32,823 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:45:32,849 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:45:32,852 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:45:34,552 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:45:34,552 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:45:34,552 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:45:34,553 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:45:34,553 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:45:34,553 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:45:35,529 - root - INFO - Application Run
+2025-06-01 23:46:30,890 - root - INFO - i am in the main method..
+2025-06-01 23:46:30,890 - root - INFO - Calling Spark Object
+2025-06-01 23:46:30,890 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:46:30,890 - Get_spark - INFO - master is local
+2025-06-01 23:46:37,934 - Get_spark - INFO - Spark object create...
+2025-06-01 23:46:37,934 - root - INFO - Validating Spark object
+2025-06-01 23:46:37,934 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:46:40,834 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:46:40,834 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:46:40,835 - root - INFO - Reading file which is of > json
+2025-06-01 23:46:42,289 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:46:45,707 - root - INFO - Dataframe validation Count...
+2025-06-01 23:46:46,486 - root - INFO - Data processing json flattening process
+2025-06-01 23:46:46,486 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:46:46,620 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:46:46,738 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:46:46,761 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:46:46,987 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:46:47,006 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:46:47,006 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:46:47,035 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:46:47,038 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:46:48,766 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:46:48,766 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:46:48,766 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:46:48,767 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:46:48,767 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:46:48,767 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:46:48,767 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:46:52,426 - Business_transform - WARNING - Splitting the date time into diff
+2025-06-01 23:46:52,523 - DataFrameQueryContextLogger - ERROR - [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703
+Traceback (most recent call last):
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\py4j\protocol.py", line 327, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o320.withColumn.
+: org.apache.spark.sql.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703;
+'Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, ANALYSER_NO#281, CLR#282, Conduct#283, Density#284, FREEZING_POINT#285, Fat#286, LACTOSE#287, MACHINE_COUNT#288, PH#289, PROTEI#290, SALT#291, SNF#292, Temp#293, WATER#294, columnSplit('SampleDate)#323 AS SampleDate#324]
++- Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, __pivot_max(Val) AS `max(Val)`#280[0] AS ANALYSER_NO#281, __pivot_max(Val) AS `max(Val)`#280[1] AS CLR#282, __pivot_max(Val) AS `max(Val)`#280[2] AS Conduct#283, __pivot_max(Val) AS `max(Val)`#280[3] AS Density#284, __pivot_max(Val) AS `max(Val)`#280[4] AS FREEZING_POINT#285, __pivot_max(Val) AS `max(Val)`#280[5] AS Fat#286, __pivot_max(Val) AS `max(Val)`#280[6] AS LACTOSE#287, __pivot_max(Val) AS `max(Val)`#280[7] AS MACHINE_COUNT#288, __pivot_max(Val) AS `max(Val)`#280[8] AS PH#289, __pivot_max(Val) AS `max(Val)`#280[9] AS PROTEI#290, __pivot_max(Val) AS `max(Val)`#280[10] AS SALT#291, __pivot_max(Val) AS `max(Val)`#280[11] AS SNF#292, __pivot_max(Val) AS `max(Val)`#280[12] AS Temp#293, __pivot_max(Val) AS `max(Val)`#280[13] AS WATER#294]
+   +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, pivotfirst(TestParamName#47, max(Val)#250, ANALYSER_NO, CLR, Conduct, Density, FREEZING_POINT, Fat, LACTOSE, MACHINE_COUNT, PH, PROTEI, SALT, SNF, Temp, WATER, 0, 0) AS __pivot_max(Val) AS `max(Val)`#280]
+      +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47, max(Val#90) AS max(Val)#250]
+         +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, cast(Val#41 as decimal(18,2)) AS Val#90]
+            +- Filter atleastnnonnulls(1, TstParamAnsMapId#39L)
+               +- Filter atleastnnonnulls(1, EditStauts#25)
+                  +- Filter RLIKE(Val#41, ^[+-]?\d*\.?\d+$)
+                     +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#46, ^TEMP, Temp, 1) AS TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                        +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#45, ^PROTEIN, Protein, 1) AS TestParamName#46, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                           +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#44, ^FAT, Fat, 1) AS TestParamName#45, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                              +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#43, ^DENSITY, Density, 1) AS TestParamName#44, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                 +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#38, ^CONDUCT, Conduct, 1) AS TestParamName#43, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                    +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, regexp_replace(MilkType#26, ^C, Cow Milk, 1) AS MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#38, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                       +- Project [Sample#14.ApprovalStatus AS ApprovalStatus#21, Sample#14.CCId AS CCId#22L, Sample#14.CentreSampleNo AS CentreSampleNo#23, Sample#14.ChannelNo AS ChannelNo#24, Sample#14.EditStauts AS EditStauts#25, Sample#14.MilkType AS MilkType#26, Sample#14.NewStatus AS NewStatus#27, Sample#14.ProcessName AS ProcessName#28, Sample#14.SampleChSrc AS SampleChSrc#29L, Sample#14.SampleDate AS SampleDate#30, Sample#14.SampleNo AS SampleNo#31L, Sample#14.ShiftDesc AS ShiftDesc#32, Sample#14.ShiftTiming AS ShiftTiming#33, Sample#14.TrayNo AS TrayNo#34L, Analyser#17.AnalyserName AS AnalyserName#35, Analyser#17.AnalyserType AS AnalyserType#36, TestRslt#20.DispName AS DispName#37, TestRslt#20.TestParamName AS TestParamName#38, TestRslt#20.TstParamAnsMapId AS TstParamAnsMapId#39L, TestRslt#20.TstParamId AS TstParamId#40L, TestRslt#20.Val AS Val#41]
+                                          +- Project [Sample#14, Analyser#17, TestRslt#20]
+                                             +- Generate explode(Analyser#17.TestRslt), false, [TestRslt#20]
+                                                +- Project [Sample#14, Analyser#17]
+                                                   +- Generate explode(Sample#14.Analyser), false, [Analyser#17]
+                                                      +- Project [Sample#14]
+                                                         +- Generate explode(Sample#1), false, [Sample#14]
+                                                            +- Relation [Sample#1] json
+
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1439)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:121)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:80)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:115)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:113)
+	at org.apache.spark.sql.classic.Dataset.withPlan(Dataset.scala:2263)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:1283)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:232)
+	at org.apache.spark.sql.Dataset.withColumn(Dataset.scala:2187)
+	at org.apache.spark.sql.classic.Dataset.withColumn(Dataset.scala:1819)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+		at scala.collection.immutable.List.foreach(List.scala:334)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 23 more
+
+2025-06-01 23:46:52,555 - root - INFO - Application Run
+2025-06-01 23:47:30,806 - root - INFO - i am in the main method..
+2025-06-01 23:47:30,806 - root - INFO - Calling Spark Object
+2025-06-01 23:47:30,806 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:47:30,806 - Get_spark - INFO - master is local
+2025-06-01 23:47:38,293 - Get_spark - INFO - Spark object create...
+2025-06-01 23:47:38,293 - root - INFO - Validating Spark object
+2025-06-01 23:47:38,293 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:47:41,433 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:47:41,433 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:47:41,433 - root - INFO - Reading file which is of > json
+2025-06-01 23:47:43,051 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:47:46,666 - root - INFO - Dataframe validation Count...
+2025-06-01 23:47:47,742 - root - INFO - Data processing json flattening process
+2025-06-01 23:47:47,742 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:47:47,896 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:47:48,089 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:47:48,114 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:47:48,451 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:47:48,470 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:47:48,470 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:47:48,510 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:47:48,514 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:47:50,637 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:47:50,637 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:47:50,637 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:47:50,638 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:47:50,638 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:47:50,638 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:47:50,638 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:47:50,638 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:47:50,638 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:47:50,638 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:47:50,638 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:47:53,340 - Business_transform - WARNING - Splitting the date time into diff
+2025-06-01 23:47:53,460 - DataFrameQueryContextLogger - ERROR - [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703
+Traceback (most recent call last):
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\py4j\protocol.py", line 327, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o320.withColumn.
+: org.apache.spark.sql.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703;
+'Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, ANALYSER_NO#216, CLR#217, Conduct#218, Density#219, FREEZING_POINT#220, Fat#221, LACTOSE#222, MACHINE_COUNT#223, PH#224, PROTEI#225, SALT#226, SNF#227, Temp#228, WATER#229, columnSplit('SampleDate)#258 AS SampleDate#259]
++- Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, __pivot_max(Val) AS `max(Val)`#215[0] AS ANALYSER_NO#216, __pivot_max(Val) AS `max(Val)`#215[1] AS CLR#217, __pivot_max(Val) AS `max(Val)`#215[2] AS Conduct#218, __pivot_max(Val) AS `max(Val)`#215[3] AS Density#219, __pivot_max(Val) AS `max(Val)`#215[4] AS FREEZING_POINT#220, __pivot_max(Val) AS `max(Val)`#215[5] AS Fat#221, __pivot_max(Val) AS `max(Val)`#215[6] AS LACTOSE#222, __pivot_max(Val) AS `max(Val)`#215[7] AS MACHINE_COUNT#223, __pivot_max(Val) AS `max(Val)`#215[8] AS PH#224, __pivot_max(Val) AS `max(Val)`#215[9] AS PROTEI#225, __pivot_max(Val) AS `max(Val)`#215[10] AS SALT#226, __pivot_max(Val) AS `max(Val)`#215[11] AS SNF#227, __pivot_max(Val) AS `max(Val)`#215[12] AS Temp#228, __pivot_max(Val) AS `max(Val)`#215[13] AS WATER#229]
+   +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, pivotfirst(TestParamName#47, max(Val)#185, ANALYSER_NO, CLR, Conduct, Density, FREEZING_POINT, Fat, LACTOSE, MACHINE_COUNT, PH, PROTEI, SALT, SNF, Temp, WATER, 0, 0) AS __pivot_max(Val) AS `max(Val)`#215]
+      +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47, max(Val#90) AS max(Val)#185]
+         +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, cast(Val#41 as decimal(18,2)) AS Val#90]
+            +- Filter atleastnnonnulls(1, TstParamAnsMapId#39L)
+               +- Filter atleastnnonnulls(1, EditStauts#25)
+                  +- Filter RLIKE(Val#41, ^[+-]?\d*\.?\d+$)
+                     +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#46, ^TEMP, Temp, 1) AS TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                        +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#45, ^PROTEIN, Protein, 1) AS TestParamName#46, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                           +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#44, ^FAT, Fat, 1) AS TestParamName#45, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                              +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#43, ^DENSITY, Density, 1) AS TestParamName#44, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                 +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#38, ^CONDUCT, Conduct, 1) AS TestParamName#43, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                    +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, regexp_replace(MilkType#26, ^C, Cow Milk, 1) AS MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#38, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                       +- Project [Sample#14.ApprovalStatus AS ApprovalStatus#21, Sample#14.CCId AS CCId#22L, Sample#14.CentreSampleNo AS CentreSampleNo#23, Sample#14.ChannelNo AS ChannelNo#24, Sample#14.EditStauts AS EditStauts#25, Sample#14.MilkType AS MilkType#26, Sample#14.NewStatus AS NewStatus#27, Sample#14.ProcessName AS ProcessName#28, Sample#14.SampleChSrc AS SampleChSrc#29L, Sample#14.SampleDate AS SampleDate#30, Sample#14.SampleNo AS SampleNo#31L, Sample#14.ShiftDesc AS ShiftDesc#32, Sample#14.ShiftTiming AS ShiftTiming#33, Sample#14.TrayNo AS TrayNo#34L, Analyser#17.AnalyserName AS AnalyserName#35, Analyser#17.AnalyserType AS AnalyserType#36, TestRslt#20.DispName AS DispName#37, TestRslt#20.TestParamName AS TestParamName#38, TestRslt#20.TstParamAnsMapId AS TstParamAnsMapId#39L, TestRslt#20.TstParamId AS TstParamId#40L, TestRslt#20.Val AS Val#41]
+                                          +- Project [Sample#14, Analyser#17, TestRslt#20]
+                                             +- Generate explode(Analyser#17.TestRslt), false, [TestRslt#20]
+                                                +- Project [Sample#14, Analyser#17]
+                                                   +- Generate explode(Sample#14.Analyser), false, [Analyser#17]
+                                                      +- Project [Sample#14]
+                                                         +- Generate explode(Sample#1), false, [Sample#14]
+                                                            +- Relation [Sample#1] json
+
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1439)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:121)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:80)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:115)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:113)
+	at org.apache.spark.sql.classic.Dataset.withPlan(Dataset.scala:2263)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:1283)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:232)
+	at org.apache.spark.sql.Dataset.withColumn(Dataset.scala:2187)
+	at org.apache.spark.sql.classic.Dataset.withColumn(Dataset.scala:1819)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+		at scala.collection.immutable.List.foreach(List.scala:334)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 23 more
+
+2025-06-01 23:47:53,501 - root - INFO - Application Run
+2025-06-01 23:48:14,353 - root - INFO - i am in the main method..
+2025-06-01 23:48:14,353 - root - INFO - Calling Spark Object
+2025-06-01 23:48:14,353 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:48:14,353 - Get_spark - INFO - master is local
+2025-06-01 23:48:22,320 - Get_spark - INFO - Spark object create...
+2025-06-01 23:48:22,320 - root - INFO - Validating Spark object
+2025-06-01 23:48:22,320 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:48:25,401 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:48:25,401 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:48:25,401 - root - INFO - Reading file which is of > json
+2025-06-01 23:48:26,979 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:48:30,298 - root - INFO - Dataframe validation Count...
+2025-06-01 23:48:31,243 - root - INFO - Data processing json flattening process
+2025-06-01 23:48:31,243 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:48:31,442 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:48:31,625 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:48:31,655 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:48:32,024 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:48:32,043 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:48:32,043 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:48:32,075 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:48:32,075 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:48:33,827 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:48:33,827 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:48:33,827 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:48:33,827 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:48:33,829 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:48:33,830 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:48:33,830 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:48:44,093 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:49:02,795 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:49:55,556 - Business_transform - WARNING - Splitting the date time into diff
+2025-06-01 23:50:25,873 - DataFrameQueryContextLogger - ERROR - [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703
+Traceback (most recent call last):
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "C:\Users\Admin\IdeaProjects\CCRMRD\.venv\lib\site-packages\py4j\protocol.py", line 327, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o881.withColumn.
+: org.apache.spark.sql.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `SampleDate` cannot be resolved. Did you mean one of the following? [`Fat`, `Conduct`, `Temp`, `CLR`, `Density`]. SQLSTATE: 42703;
+'Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, ANALYSER_NO#217, CLR#218, Conduct#219, Density#220, FREEZING_POINT#221, Fat#222, LACTOSE#223, MACHINE_COUNT#224, PH#225, PROTEI#226, SALT#227, SNF#228, Temp#229, WATER#230, columnSplit('SampleDate)#490 AS SampleDate#491]
++- Project [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, __pivot_max(Val) AS `max(Val)`#216[0] AS ANALYSER_NO#217, __pivot_max(Val) AS `max(Val)`#216[1] AS CLR#218, __pivot_max(Val) AS `max(Val)`#216[2] AS Conduct#219, __pivot_max(Val) AS `max(Val)`#216[3] AS Density#220, __pivot_max(Val) AS `max(Val)`#216[4] AS FREEZING_POINT#221, __pivot_max(Val) AS `max(Val)`#216[5] AS Fat#222, __pivot_max(Val) AS `max(Val)`#216[6] AS LACTOSE#223, __pivot_max(Val) AS `max(Val)`#216[7] AS MACHINE_COUNT#224, __pivot_max(Val) AS `max(Val)`#216[8] AS PH#225, __pivot_max(Val) AS `max(Val)`#216[9] AS PROTEI#226, __pivot_max(Val) AS `max(Val)`#216[10] AS SALT#227, __pivot_max(Val) AS `max(Val)`#216[11] AS SNF#228, __pivot_max(Val) AS `max(Val)`#216[12] AS Temp#229, __pivot_max(Val) AS `max(Val)`#216[13] AS WATER#230]
+   +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, pivotfirst(TestParamName#47, max(Val)#186, ANALYSER_NO, CLR, Conduct, Density, FREEZING_POINT, Fat, LACTOSE, MACHINE_COUNT, PH, PROTEI, SALT, SNF, Temp, WATER, 0, 0) AS __pivot_max(Val) AS `max(Val)`#216]
+      +- Aggregate [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47], [ShiftTiming#33, ShiftDesc#32, AnalyserType#36, TestParamName#47, max(Val#90) AS max(Val)#186]
+         +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, cast(Val#41 as decimal(18,2)) AS Val#90]
+            +- Filter atleastnnonnulls(1, TstParamAnsMapId#39L)
+               +- Filter atleastnnonnulls(1, EditStauts#25)
+                  +- Filter RLIKE(Val#41, ^[+-]?\d*\.?\d+$)
+                     +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#46, ^TEMP, Temp, 1) AS TestParamName#47, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                        +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#45, ^PROTEIN, Protein, 1) AS TestParamName#46, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                           +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#44, ^FAT, Fat, 1) AS TestParamName#45, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                              +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#43, ^DENSITY, Density, 1) AS TestParamName#44, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                 +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, regexp_replace(TestParamName#38, ^CONDUCT, Conduct, 1) AS TestParamName#43, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                    +- Project [ApprovalStatus#21, CCId#22L, CentreSampleNo#23, ChannelNo#24, EditStauts#25, regexp_replace(MilkType#26, ^C, Cow Milk, 1) AS MilkType#42, NewStatus#27, ProcessName#28, SampleChSrc#29L, SampleDate#30, SampleNo#31L, ShiftDesc#32, ShiftTiming#33, TrayNo#34L, AnalyserName#35, AnalyserType#36, DispName#37, TestParamName#38, TstParamAnsMapId#39L, TstParamId#40L, Val#41]
+                                       +- Project [Sample#14.ApprovalStatus AS ApprovalStatus#21, Sample#14.CCId AS CCId#22L, Sample#14.CentreSampleNo AS CentreSampleNo#23, Sample#14.ChannelNo AS ChannelNo#24, Sample#14.EditStauts AS EditStauts#25, Sample#14.MilkType AS MilkType#26, Sample#14.NewStatus AS NewStatus#27, Sample#14.ProcessName AS ProcessName#28, Sample#14.SampleChSrc AS SampleChSrc#29L, Sample#14.SampleDate AS SampleDate#30, Sample#14.SampleNo AS SampleNo#31L, Sample#14.ShiftDesc AS ShiftDesc#32, Sample#14.ShiftTiming AS ShiftTiming#33, Sample#14.TrayNo AS TrayNo#34L, Analyser#17.AnalyserName AS AnalyserName#35, Analyser#17.AnalyserType AS AnalyserType#36, TestRslt#20.DispName AS DispName#37, TestRslt#20.TestParamName AS TestParamName#38, TestRslt#20.TstParamAnsMapId AS TstParamAnsMapId#39L, TestRslt#20.TstParamId AS TstParamId#40L, TestRslt#20.Val AS Val#41]
+                                          +- Project [Sample#14, Analyser#17, TestRslt#20]
+                                             +- Generate explode(Analyser#17.TestRslt), false, [TestRslt#20]
+                                                +- Project [Sample#14, Analyser#17]
+                                                   +- Generate explode(Sample#14.Analyser), false, [Analyser#17]
+                                                      +- Project [Sample#14]
+                                                         +- Generate explode(Sample#1), false, [Sample#14]
+                                                            +- Relation [Sample#1] json
+
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+	at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+	at org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1439)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:121)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:80)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:115)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:113)
+	at org.apache.spark.sql.classic.Dataset.withPlan(Dataset.scala:2263)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:1283)
+	at org.apache.spark.sql.classic.Dataset.withColumns(Dataset.scala:232)
+	at org.apache.spark.sql.Dataset.withColumn(Dataset.scala:2187)
+	at org.apache.spark.sql.classic.Dataset.withColumn(Dataset.scala:1819)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:76)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller
+		at org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:401)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:169)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:404)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$foreachUp$1$adapted(TreeNode.scala:251)
+		at scala.collection.immutable.Vector.foreach(Vector.scala:2125)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:251)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:402)
+		at scala.collection.immutable.List.foreach(List.scala:334)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:402)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:252)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:284)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:255)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:244)
+		at org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:231)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:249)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:192)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:192)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+		at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+		at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+		at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+		at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+		at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+		at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+		at scala.util.Try$.apply(Try.scala:217)
+		at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+		at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+		at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+		... 23 more
+
+2025-06-01 23:51:31,015 - root - INFO - i am in the main method..
+2025-06-01 23:51:31,015 - root - INFO - Calling Spark Object
+2025-06-01 23:51:31,015 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:51:31,016 - Get_spark - INFO - master is local
+2025-06-01 23:51:38,220 - Get_spark - INFO - Spark object create...
+2025-06-01 23:51:38,220 - root - INFO - Validating Spark object
+2025-06-01 23:51:38,220 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:51:41,165 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:51:41,165 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:51:41,165 - root - INFO - Reading file which is of > json
+2025-06-01 23:51:42,632 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:51:45,835 - root - INFO - Dataframe validation Count...
+2025-06-01 23:51:46,672 - root - INFO - Data processing json flattening process
+2025-06-01 23:51:46,672 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:51:46,827 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:51:46,958 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:51:46,980 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:51:47,200 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:51:47,217 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:51:47,217 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:51:47,246 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:51:47,248 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:51:49,093 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:51:49,093 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:51:49,093 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:51:49,094 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:51:49,094 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:51:49,094 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:51:49,095 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:51:51,129 - Business_transform - WARNING - Business transform intrn_data completed successfully
+2025-06-01 23:51:52,087 - root - INFO - Application Run
+2025-06-01 23:52:17,984 - root - INFO - i am in the main method..
+2025-06-01 23:52:17,984 - root - INFO - Calling Spark Object
+2025-06-01 23:52:17,984 - Get_spark - INFO - get_spark_object spark object started
+2025-06-01 23:52:17,984 - Get_spark - INFO - master is local
+2025-06-01 23:52:25,138 - Get_spark - INFO - Spark object create...
+2025-06-01 23:52:25,138 - root - INFO - Validating Spark object
+2025-06-01 23:52:25,138 - Validate - WARNING - Started the get_current_date method...
+2025-06-01 23:52:28,031 - Validate - WARNING - current date by using spark is [Row(current_date()=datetime.date(2025, 6, 1))]
+2025-06-01 23:52:28,031 - Validate - WARNING - Validation Done, go forward....
+2025-06-01 23:52:28,031 - root - INFO - Reading file which is of > json
+2025-06-01 23:52:29,493 - root - INFO - Displaying the dataframe > DataFrame[Sample: array<struct<Analyser:array<struct<AnalyserName:string,AnalyserType:string,TestRslt:array<struct<DispName:string,TestParamName:string,TstParamAnsMapId:bigint,TstParamId:bigint,Val:string>>>>,ApprovalStatus:string,CCId:bigint,CentreSampleNo:string,ChannelNo:string,EditStauts:string,MilkType:string,NewStatus:string,ProcessName:string,SampleChSrc:bigint,SampleDate:string,SampleNo:bigint,ShiftDesc:string,ShiftTiming:string,TrayNo:bigint>>]
+2025-06-01 23:52:32,656 - root - INFO - Dataframe validation Count...
+2025-06-01 23:52:33,590 - root - INFO - Data processing json flattening process
+2025-06-01 23:52:33,591 - Data_transform - WARNING - Flattening the json file Sample File
+2025-06-01 23:52:33,731 - Data_transform - WARNING - Replacing MilkType from C to Cow Milk
+2025-06-01 23:52:33,846 - Data_transform - WARNING - Filter Invalid records
+2025-06-01 23:52:33,869 - Data_transform - WARNING - Checking Null values in the dataframe
+2025-06-01 23:52:34,087 - Data_transform - WARNING - Dropping Null Values
+2025-06-01 23:52:34,108 - Data_transform - WARNING - Successfully dropped Null values
+2025-06-01 23:52:34,109 - Data_transform - WARNING - Convert Value into decimal
+2025-06-01 23:52:34,138 - Data_transform - WARNING - Data_transform completed successfully...
+2025-06-01 23:52:34,141 - root - INFO - Displaying the Processed dataframe > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:52:35,901 - root - INFO - Schema validation for data frame > DataFrame[ApprovalStatus: string, CCId: bigint, CentreSampleNo: string, ChannelNo: string, EditStauts: string, MilkType: string, NewStatus: string, ProcessName: string, SampleChSrc: bigint, SampleDate: string, SampleNo: bigint, ShiftDesc: string, ShiftTiming: string, TrayNo: bigint, AnalyserName: string, AnalyserType: string, DispName: string, TestParamName: string, TstParamAnsMapId: bigint, TstParamId: bigint, Val: decimal(18,2)]
+2025-06-01 23:52:35,901 - Validate - WARNING - Printing dataframe schema df_sample_file
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('ApprovalStatus', StringType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('CCId', LongType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('CentreSampleNo', StringType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('ChannelNo', StringType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('EditStauts', StringType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('MilkType', StringType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('NewStatus', StringType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('ProcessName', StringType(), True)
+2025-06-01 23:52:35,901 - Validate - INFO - \StructField('SampleChSrc', LongType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('SampleDate', StringType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('SampleNo', LongType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('ShiftDesc', StringType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('ShiftTiming', StringType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('TrayNo', LongType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('AnalyserName', StringType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('AnalyserType', StringType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('DispName', StringType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('TestParamName', StringType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('TstParamAnsMapId', LongType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('TstParamId', LongType(), True)
+2025-06-01 23:52:35,902 - Validate - INFO - \StructField('Val', DecimalType(18,2), True)
+2025-06-01 23:52:35,902 - Validate - INFO - Print schema done, go fwd...
+2025-06-01 23:52:35,902 - root - INFO - Applying business logics for first level transform
+2025-06-01 23:52:35,902 - Business_transform - WARNING - Processing the data for the raw data consumer
+2025-06-01 23:52:38,095 - Business_transform - WARNING - Business transform intrn_data completed successfully
+2025-06-01 23:52:40,428 - root - INFO - Application Run

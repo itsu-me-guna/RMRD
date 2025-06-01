@@ -1,4 +1,5 @@
 from pyspark.sql.functions import *
+from pyspark.sql.types import *
 import logging.config
 logging.config.fileConfig('Properties/Configuration/logging.config')
 loggers = logging.getLogger('Data_transform')
@@ -11,7 +12,15 @@ def data_clean(df, df_name):
                        "Analyser.AnalyserName", "Analyser.AnalyserType", "TestRslt.DispName", "TestRslt.TestParamName", "TestRslt.TstParamAnsMapId", "TestRslt.TstParamId", "TestRslt.Val")
 
         loggers.warning('Replacing MilkType from C to Cow Milk')
-        df = df.withColumn("MilkType",regexp_replace(col("MilkType"),r"^C","Cow Milk"))
+        df = (df.withColumn("MilkType",regexp_replace(col("MilkType"),r"^C","Cow Milk"))
+              .withColumn("TestParamName",regexp_replace(col("TestParamName"),r"^CONDUCT","Conduct"))
+              .withColumn("TestParamName",regexp_replace(col("TestParamName"),r"^DENSITY","Density"))
+              .withColumn("TestParamName",regexp_replace(col("TestParamName"),r"^FAT","Fat"))
+              .withColumn("TestParamName",regexp_replace(col("TestParamName"),r"^PROTEIN","Protein"))
+              .withColumn("TestParamName",regexp_replace(col("TestParamName"),r"^TEMP","Temp")))
+
+        loggers.warning('Filter Invalid records')
+        df = df.filter(col("Val").rlike("^[+-]?\\d*\\.?\\d+$"))
 
         loggers.warning('Checking Null values in the dataframe')
         df_na = df.select([count(when (col(c).isNull(), c)).alias(c) for c in df.columns])
@@ -19,6 +28,9 @@ def data_clean(df, df_name):
         df = df.dropna(subset="EditStauts")
         df = df.dropna(subset="TstParamAnsMapId")
         loggers.warning('Successfully dropped Null values')
+
+        loggers.warning('Convert Value into decimal')
+        df = df.withColumn("Val", col("Val").cast(DecimalType(18,2)))
 
     except Exception as exp:
         loggers.error('An error occured duting the Data_transform===',str(exp))
